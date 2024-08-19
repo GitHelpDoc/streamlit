@@ -5,10 +5,9 @@ st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
 with st.container():
     st.subheader("Hi, I'm Rekha working with my Streamlit experts here.:wave:")
-
-
-#st.title ("I'm working on becoming a Streamlit Evangelist.")
-
+    st.title ("I'm working on becoming a Streamlit Evangelist.")
+    st.write("I'm passionate about learning Python, VBA, GenAI and everything else related to machine learning on Planet Earth.")
+    st.write(https://streamlit.io)
 
     st.markdown("""
     <style>
