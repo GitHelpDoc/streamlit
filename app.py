@@ -12,6 +12,11 @@ def load_lottieur1(url):
         return None
     return r.json()
 
+#Use local CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+local_css("style/style.css")        
 
 lottie_coding = ("https://lottie.host/98aef226-3e13-4ab4-a58b-39cb8f667e70/L4dsL2ZKSf.json")
 img_lottie_animation = Image.open("gitpodimage.jpg")
