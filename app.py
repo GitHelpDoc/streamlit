@@ -81,7 +81,7 @@ with text_column:
         In this video, I'm going to show you how to implement a contact form in your Streamlit app.
         """  
         )
-        st.markdown(["Watch video..."](https://www.youtube.com/watch?v=VqgUkExPvLY)
+        st.markdown("[Watch video...](https://www.youtube.com/watch?v=VqgUkExPvLY)")
 
 #----CONTACT----
 with st.container():
