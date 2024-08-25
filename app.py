@@ -70,3 +70,39 @@ with st.container():
         """)
         st.markdown("[Watch video...](https://www.youtube.com/watch?v=VqgUkExPvLY)")
 
+image_column, text_column = st.columns((1,2))
+with image_column:
+            st.image(img_contact_form)
+with text_column:
+        st.subheader("How To Add A Contact Form To Your Streamlit App")
+        st.write(
+        """
+        Want to add a contact from to your Streamlit website?
+        In this video, I'm going to show you how to implement a contact form in your Streamlit app.
+        """  
+        )
+        st.markdown(["Watch video..."](https://www.youtube.com/watch?v=VqgUkExPvLY)
+
+#----CONTACT----
+with st.container():
+    st.write("---")
+    st.header ("Get In Touch With Me!")
+    st.write("##")
+#Documentation:https://formsubmit.co/ !!!CHANGE EMAIL ADDRESS!!!
+contact_form = """
+<form action="https://formsubmit.co/airekhaml@gmail.com" method="POST">
+     <input type="hidden" name"_captcha" value="false">
+     <input type="text" name="name" placeholder="Your name" required>
+     <input type="email" name="email" placeholder="Your email" required>
+     <textarea name="message" placeholder="Your message here" required></textarea>
+     <button type="submit">Send</button>
+</form>
+"""
+left_column, right_column = st.columns(2)
+with left_column:
+    st.markdown(contact_form, unsafe_allow_html=True)
+with right_column:
+    st_empty()
+
+
+
