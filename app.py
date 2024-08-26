@@ -19,6 +19,7 @@ def local_css(file_name):
 local_css("style/style.css")        
 
 lottie_coding = ("https://lottie.host/98aef226-3e13-4ab4-a58b-39cb8f667e70/L4dsL2ZKSf.json")
+img_contact_form = Image.open("gitpodimage.jpg")
 img_lottie_animation = Image.open("gitpodimage.jpg")
 with st.container():
     st.subheader("Hi, I'm Rekha working with my Streamlit experts here.:wave:")
@@ -75,18 +76,19 @@ with st.container():
         """)
         st.markdown("[Watch video...](https://www.youtube.com/watch?v=VqgUkExPvLY)")
 
-image_column, text_column = st.columns((1,2))
-with image_column:
-            st.image(img_contact_form)
-with text_column:
+with st.container():
+    image_column, text_column = st.columns((1,2))
+    with image_column:
+        st.image(img_contact_form)
+    with text_column:
         st.subheader("How To Add A Contact Form To Your Streamlit App")
         st.write(
-        """
-        Want to add a contact from to your Streamlit website?
-        In this video, I'm going to show you how to implement a contact form in your Streamlit app.
-        """  
-        )
-        st.markdown("[Watch video...](https://www.youtube.com/watch?v=VqgUkExPvLY)")
+            """
+            Want to add a contact from to your Streamlit website?
+            In this video, I'm going to show you how to implement a contact form in your Streamlit app.
+            """  
+    )
+    st.markdown("[Watch video...](https://www.youtube.com/watch?v=VqgUkExPvLY)")
 
 #----CONTACT----
 with st.container():
@@ -107,7 +109,7 @@ left_column, right_column = st.columns(2)
 with left_column:
     st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
-    st_empty()
+    st.empty()
 
 
 
